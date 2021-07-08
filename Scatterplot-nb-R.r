@@ -1,6 +1,10 @@
-# **Reading the dataframe**
+# **R-defining the argument**
 
-Regdata <- read.csv("regrex1.csv")
+args = commandArgs(trailingOnly=TRUE)
+
+
+# **Reading the dataframe using argument**
+Regdata <- read.csv(args[1])
 x <- Regdata$x
 y <- Regdata$y
 
